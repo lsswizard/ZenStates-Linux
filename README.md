@@ -6,7 +6,7 @@ Dynamically edit AMD Ryzen processor P-States
 
 Requires root access and the msr kernel module loaded (just run "modprobe msr" as root).
 
-    usage: zenstates.py [-h] [-l] [-p {0,1,2,3,4,5,6,7}] [--enable] [--disable] [-f FID] [-d DID] [-v VID]
+    usage: zenstates.py [-h] [-l] [-p {0,1,2,3,4,5,6,7}] [--vc VOLTS] [--enable] [--disable] [-f FID] [-d DID] [-v VID]
 
     Sets P-States for Ryzen processors
 
@@ -20,6 +20,8 @@ Requires root access and the msr kernel module loaded (just run "modprobe msr" a
       -f FID, --fid FID     FID to set (in hex)
       -d DID, --did DID     DID to set (in hex)
       -v VID, --vid VID     VID to set (in hex)
+      -vc VOLTS, --vcore VOLTS  
+							VCore to set (in volts)
       --c6-enable           Enable C-State C6
       --c6-disable          Disable C-State C6
 

@@ -76,7 +76,7 @@ parser.add_argument('--disable', action='store_true', help='Disable P-State')
 parser.add_argument('-f', '--fid', default=-1, type=hex, help='FID to set (in hex)')
 parser.add_argument('-d', '--did', default=-1, type=hex, help='DID to set (in hex)')
 parser.add_argument('-v', '--vid', default=-1, type=hex, help='VID to set (in hex)')
-parser.add_argument('--vcore', default=-1, type=float, help='vCore to set (in volts)')
+parser.add_argument('-vc','--vcore', default=-1, type=float, help='vCore to set (in volts)')
 parser.add_argument('--c6-enable', action='store_true', help='Enable C-State C6')
 parser.add_argument('--c6-disable', action='store_true', help='Disable C-State C6')
 
